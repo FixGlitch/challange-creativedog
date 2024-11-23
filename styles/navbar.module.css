@@ -1,0 +1,18 @@
+.navbarLogo {
+  margin-inline: auto;
+}
+
+.logoImg {
+  width: 130px;
+  height: 24px;
+}
+
+@media (min-width: 992px) {
+  .logoImg {
+    width: 185px;
+    height: 34px;
+  }
+  .navbarLogo {
+    margin-inline: 0;
+  }
+}
