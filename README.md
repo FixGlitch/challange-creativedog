@@ -11,9 +11,16 @@ src/
 │   ├── atoms/         # Componentes básicos e indivisibles
 │   ├── molecules/     # Combinación de átomos para crear estructuras básicas
 │   │   ├── LoginForm.tsx # Formulario de login usando Formik
+│   │   ├── CategoryCard.tsx # Carta de categoria reutilizable
+│   │   ├── ProductCard.tsx # Carta de categoria reutilizable
+│   │   ├── ProductCardCarrousel.tsx # Carta para el carrousel en mobile
 │   ├── organisms/     # Agrupaciones de moléculas que forman secciones completas
 │   │   ├── Navbar.tsx    # Barra de navegación reutilizable
 │   │   ├── Footer.tsx    # Pie de pagina reutilizable
+│   │   ├── CategoryList.tsx # Lista de categorias
+│   │   ├── FeaturedSection.tsx # Banner promocional
+│   │   ├── HeroSection.tsx # Seccion principal
+│   │   ├── ProductList.tsx # Lista de productos
 │   ├── templates/     # Estructuras principales de páginas (layouts)
 │   │   ├── LoginTemplate.tsx # Plantilla para la página de login
 │   │   ├── HomeTemplate.tsx  # Plantilla para la página de inicio
@@ -26,9 +33,19 @@ src/
 │   ├── login.tsx      # Página de login
 ├── styles/            # Estilos globales
 │   ├── globals.css    # Estilos generales aplicados a toda la aplicación
+│   ├── category-card.module.css
+│   ├── category-list.module.css
+│   ├── featured.module.css
+│   ├── footer.module.css
+│   ├── hero.module.css
+│   ├── login-form.module.css
+│   ├── navbar.module.css
+│   ├── product-card-carrousel.module.css
+│   ├── product-card.module.css
+│   ├── product-list.module.css
 ├── utils/             # Funciones auxiliares
 │   ├── api.js         # Configuración del cliente para consumir Strapi
-│   ├── i18n.js        # Configuración del i18n para la traduccion
+│   ├── i18n.js        # Configuración del i18n para la traducción
 
 ```
 
