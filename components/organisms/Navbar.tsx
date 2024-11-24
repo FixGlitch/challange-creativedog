@@ -2,8 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import styles from "../../styles/navbar.module.css";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const router = useRouter();
   const pathname = usePathname();
 
@@ -17,7 +19,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-      <div className="container ">
+      <div className={styles.navbarContent}>
         <Link className={`${styles.navbarLogo} navbar-brand`} href="/">
           <Image
             src="/logo.svg"
@@ -36,32 +38,49 @@ const Navbar = () => {
           >
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <Link className="nav-link" href="/">
-                  Inicio
+                <Link
+                  className={`${styles.navbarLinks} nav-link text-decoration-none text-start`}
+                  href="/"
+                >
+                  {t("home")}
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/productos">
-                  Productos
+                <Link
+                  className={`${styles.navbarLinks} nav-link text-decoration-none text-start`}
+                  href="#"
+                >
+                  {t("products")}
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/nosotros">
-                  Nosotros
+                <Link
+                  className={`${styles.navbarLinks} nav-link text-decoration-none text-start`}
+                  href="#"
+                >
+                  {t("aboutUs")}
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/contacto">
-                  Contacto
+                <Link
+                  className={`${styles.navbarLinks} nav-link text-decoration-none text-start`}
+                  href="#"
+                >
+                  {t("contact")}
                 </Link>
               </li>
             </ul>
             <button
               onClick={handleLogout}
               className="btn btn-link text-dark"
-              aria-label="Cerrar sesión"
+              aria-label={t("logout")}
             >
-              <Image src="/logout.svg" alt="Logout" width={24} height={24} />
+              <Image
+                src="/logout.svg"
+                alt={t("logout")}
+                width={24}
+                height={24}
+              />
             </button>
           </div>
         )}

@@ -1,5 +1,21 @@
+.navbarContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 45px;
+}
+
 .navbarLogo {
   margin-inline: auto;
+}
+
+.navbarLinks {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color:black
 }
 
 .logoImg {

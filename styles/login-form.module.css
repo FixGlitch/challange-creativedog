@@ -12,6 +12,7 @@
   font-size: 28px;
   font-weight: 700;
   line-height: 40px;
+  color: #1f2937;
 }
 
 .formSubTitle {
@@ -19,6 +20,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  color: #6b7280;
 }
 
 .labels {
@@ -26,7 +28,7 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
-  text-align: left;
+  color: #111827;
 }
 
 .fields {
@@ -36,6 +38,7 @@
   line-height: 24px;
   padding: 12px;
   border-radius: 0.4rem;
+  color: #6b7280;
 }
 
 .buttonSubmit {
@@ -52,11 +55,14 @@
   transition: none;
 }
 
-.buttonSubmit:hover,
-.buttonSubmit:focus,
-.buttonSubmit:active {
+.buttonSubmit:hover {
   background-color: #0500ff;
   color: #fff;
   box-shadow: none;
   outline: none;
+}
+
+.submitting {
+  background-color: #0500ff !important;
+  cursor: not-allowed;
 }

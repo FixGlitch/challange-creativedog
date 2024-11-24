@@ -17,7 +17,7 @@ const HomePage = () => {
   }, [router]);
 
   return (
-    <HomeTemplate>
+    <HomeTemplate >
       <HeroSection />
       <CategoryList />
       <ProductList />

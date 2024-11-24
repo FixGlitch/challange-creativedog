@@ -18,7 +18,8 @@ const LoginForm = ({ onSubmit }: LoginFormProps) => {
 
   return (
     <div
-      className={`${styles.loginFormContainer} container d-flex flex-column`}
+      className={`${styles.loginFormContainer} d-flex flex-column`}
+      style={{ backgroundColor: "#F7F7F7" }}
     >
       <div className="flex-grow-1 d-flex justify-content-center align-items-center">
         <div className={`${styles.formContainer}`}>
@@ -122,7 +123,11 @@ const LoginForm = ({ onSubmit }: LoginFormProps) => {
                 <div className="d-flex flex-column gap-3 mt-4">
                   <button
                     type="submit"
-                    className={`${styles.buttonSubmit} btn w-100 text-decoration-none text-center`}
+                    className={`${
+                      styles.buttonSubmit
+                    } btn w-100 text-decoration-none text-center ${
+                      isSubmitting ? styles.submitting : ""
+                    }`}
                     disabled={isSubmitting}
                   >
                     <Image
