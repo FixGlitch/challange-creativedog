@@ -1,0 +1,45 @@
+.footerContainer {
+  border-top: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+.termsText {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9CA3AF;
+}
+
+.copyrightText {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9CA3AF;
+}
+
+.designByText {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: right;
+  color: #9CA3AF;
+}
+
+.creativedogAgencyLink {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-left: 4px;
+  color: "#0500FF";
+}
+
+@media (min-width: 992px) {
+  .designByText {
+    text-align: center; 
+  }
+}
+

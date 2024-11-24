@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import type { AppProps } from "next/app";
 import { I18nextProvider } from "react-i18next";
-import i18n from "../utils/i18n";
+import i18n from "../../utils/i18n";
 import { useEffect, useState } from "react";
 import Navbar from "@/components/organisms/Navbar";
 import Footer from "@/components/organisms/Footer";

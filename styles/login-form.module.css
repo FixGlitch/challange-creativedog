@@ -1,0 +1,68 @@
+.loginFormContainer {
+  min-height: 80vh;
+}
+
+.formContainer {
+  width: 460px;
+  height: 472px;
+}
+
+.formTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #1f2937;
+}
+
+.formSubTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #6b7280;
+}
+
+.labels {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #111827;
+}
+
+.fields {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 12px;
+  border-radius: 0.4rem;
+  color: #6b7280;
+}
+
+.buttonSubmit {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  background-color: #0500ff;
+  padding: 12px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: none;
+}
+
+.buttonSubmit:hover {
+  background-color: #0500ff;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+
+.submitting {
+  background-color: #0500ff !important;
+  cursor: not-allowed;
+}

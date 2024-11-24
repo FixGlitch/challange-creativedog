@@ -1,0 +1,95 @@
+.heroSection {
+  position: relative;
+  height: 597px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.heroContent {
+  max-width: 600px;
+  z-index: 1;
+}
+
+.heroTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 75.14px;
+  width: 828px;
+}
+
+.heroSubTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  width: 460px;
+}
+
+.heroButtonPrimary,
+.heroButtonSecondary {
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 12px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: none;
+}
+
+.heroButtonPrimary {
+  background-color: #0500ff;
+  width: 188px;
+}
+
+.heroButtonSecondary {
+  width: 188px;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: 624px;
+  }
+
+  .heroContent {
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+
+  .heroTitle {
+    font-size: 32px;
+    line-height: 40px;
+    width: 100%;
+  }
+
+  .heroSubTitle {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  .heroButtonPrimary,
+  .heroButtonSecondary {
+    width: 50%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .heroButtonPrimary {
+    margin-right: auto;
+  }
+
+  .heroButtonSecondary.d-none {
+    display: none !important;
+  }
+}

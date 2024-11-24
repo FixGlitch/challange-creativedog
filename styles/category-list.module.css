@@ -1,0 +1,84 @@
+.categoryTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.categorySpan {
+  font-family: "Raleway", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #0500ff;
+}
+
+.categorySubTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  width: 60%;
+}
+
+.categoryLink {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.swiperContainer {
+  margin-left: 630px;
+}
+
+@media (min-width: 1440px) {
+  .swiperContainer {
+    margin-left: 300px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .swiperContainer {
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .categoryTitle {
+    font-size: 32px;
+    line-height: 40px;
+    width: 80%;
+  }
+  .categorySpan {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .categorySubTitle {
+    font-size: 16px;
+    line-height: 22px;
+    width: 90%;
+  }
+  .swiperContainer {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .categoryTitle {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .categorySpan {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .categorySubTitle {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+  }
+  .swiperContainer {
+    margin-left: 10px;
+  }
+}
